@@ -39,11 +39,17 @@ $chmod +x ./install.sh
 $sh install.sh
 ```
 ### From Ansible-Collection
-#### Download tarball
+#### Prerequisites
+
+- OS: Red Hat,Ubuntu,CentOS,OS X,BSD,Suse
+- Python:  python3.6 or later (python 3.8 is preferred)/python3
+- Ansible: 2.9+ or later.
+#### Download tarball(Off line)
 ```
 https://galaxy.ansible.com/huaweidatacom/ne
+ansible-galaxy collection install ./huaweidatacom-ne-1.0.2/ -p /usr/local/lib/python3.8/site-packages/ansible_collections/ --force
 ```
-#### Installation
+#### Installation(On line)
 ```
 ansible-galaxy collection install huaweidatacom.ne
 ```
